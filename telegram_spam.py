@@ -1,4 +1,5 @@
 import asyncio
+import os
 import joblib
 from telegram import Bot
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
