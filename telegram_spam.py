@@ -1,9 +1,7 @@
 import asyncio
-from turtle import update
-from unittest import result
 import joblib
 from telegram import Bot
-BOT_TOKEN = "8410553734:AAEbe1Uc42JFSdcSiuDcqpAA83UcLAdvFtU"
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 model = joblib.load('spam_model.pkl')
 vectorizer = joblib.load('vectorizer.pkl')
 print("تم تحميل النموذج")
